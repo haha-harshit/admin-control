@@ -7,7 +7,9 @@ import {
 import { stackedCustomSeries, stackedPrimaryXAxis, stackedPrimaryYAxis } from './../../data/dummy';
 
 const Stacked = ({ width, height }) => {
+  
   return (
+
     <ChartComponent width={width} height={height} id='charts'
       primaryXAxis={stackedPrimaryXAxis}
       primaryYAxis={stackedPrimaryYAxis}

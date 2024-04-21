@@ -3,6 +3,15 @@ import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutline
 import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
 import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
+import { MdSpeaker } from "react-icons/md";
+import { MdAddHomeWork } from "react-icons/md";
+
+import { GrTransaction } from "react-icons/gr";
+
+import { GrOverview } from "react-icons/gr";
+import { MdOutlineSpeakerGroup } from "react-icons/md";
+import { FaUsers } from "react-icons/fa";
+
 import { IoMdContacts } from 'react-icons/io';
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
@@ -474,8 +483,8 @@ export const links = [
     title: 'Dashboard',
     links: [
       {
-        name: 'ecommerce',
-        icon: <FiShoppingBag />,
+        name: 'overview',
+        icon: <GrOverview />,
       },
     ],
   },
@@ -484,133 +493,137 @@ export const links = [
     title: 'Pages',
     links: [
       {
-        name: 'orders',
-        icon: <AiOutlineShoppingCart />,
+        name: 'clubs',
+        icon: <FaUsers />,
       },
       {
-        name: 'employees',
-        icon: <IoMdContacts />,
+        name: 'djs',
+        icon: <MdOutlineSpeakerGroup />,
       },
       {
         name: 'customers',
         icon: <RiContactsLine />,
       },
-    ],
-  },
-  {
-    title: 'Apps',
-    links: [
       {
-        name: 'calendar',
-        icon: <AiOutlineCalendar />,
-      },
-      {
-        name: 'kanban',
-        icon: <BsKanban />,
-      },
-      {
-        name: 'editor',
-        icon: <FiEdit />,
-      },
-      {
-        name: 'color-picker',
-        icon: <BiColorFill />,
+        name: 'transactions',
+        icon: <GrTransaction />        ,
       },
     ],
   },
-  {
-    title: 'Charts',
-    links: [
-      {
-        name: 'line',
-        icon: <AiOutlineStock />,
-      },
-      {
-        name: 'area',
-        icon: <AiOutlineAreaChart />,
-      },
+//   {
+//     title: 'Apps',
+//     links: [
+//       {
+//         name: 'calendar',
+//         icon: <AiOutlineCalendar />,
+//       },
+//       {
+//         name: 'kanban',
+//         icon: <BsKanban />,
+//       },
+//       {
+//         name: 'editor',
+//         icon: <FiEdit />,
+//       },
+//       {
+//         name: 'color-picker',
+//         icon: <BiColorFill />,
+//       },
+//     ],
+//   },
+//   {
+//     title: 'Charts',
+//     links: [
+//       {
+//         name: 'line',
+//         icon: <AiOutlineStock />,
+//       },
+//       {
+//         name: 'area',
+//         icon: <AiOutlineAreaChart />,
+//       },
 
-      {
-        name: 'bar',
-        icon: <AiOutlineBarChart />,
-      },
-      {
-        name: 'pie',
-        icon: <FiPieChart />,
-      },
-      {
-        name: 'financial',
-        icon: <RiStockLine />,
-      },
-      {
-        name: 'color-mapping',
-        icon: <BsBarChart />,
-      },
-      {
-        name: 'pyramid',
-        icon: <GiLouvrePyramid />,
-      },
-      {
-        name: 'stacked',
-        icon: <AiOutlineBarChart />,
-      },
-    ],
-  },
-];
+//       {
+//         name: 'bar',
+//         icon: <AiOutlineBarChart />,
+//       },
+//       {
+//         name: 'pie',
+//         icon: <FiPieChart />,
+//       },
+//       {
+//         name: 'financial',
+//         icon: <RiStockLine />,
+//       },
+//       {
+//         name: 'color-mapping',
+//         icon: <BsBarChart />,
+//       },
+//       {
+//         name: 'pyramid',
+//         icon: <GiLouvrePyramid />,
+//       },
+//       {
+//         name: 'stacked',
+//         icon: <AiOutlineBarChart />,
+//       },
+//     ],
+//   },
+// ];
 
-export const cartData = [
-  {
-    image:
-      product5,
-    name: 'butterscotch ice-cream',
-    category: 'Milk product',
-    price: '$250',
-  },
-  {
-    image:
-      product6,
-    name: 'Supreme fresh tomato',
-    category: 'Vegetable Item',
-    price: '$450',
-  },
-  {
-    image:
-      product7,
-    name: 'Red color candy',
-    category: 'Food Item',
-    price: '$190',
-  },
-];
+// export const cartData = [
+//   {
+//     image:
+//       product5,
+//     name: 'butterscotch ice-cream',
+//     category: 'Milk product',
+//     price: '₹250',
+//   },
+//   {
+//     image:
+//       product6,
+//     name: 'Supreme fresh tomato',
+//     category: 'Vegetable Item',
+//     price: '₹450',
+//   },
+//   {
+//     image:
+//       product7,
+//     name: 'Red color candy',
+//     category: 'Food Item',
+//     price: '₹190',
+//   },
+// ];
 
-export const chatData = [
-  {
-    image:
-      avatar2,
-    message: 'Roman Joined the Team!',
-    desc: 'Congratulate him',
-    time: '9:08 AM',
-  },
-  {
-    image:
-      avatar3,
-    message: 'New message received',
-    desc: 'Salma sent you new message',
-    time: '11:56 AM',
-  },
-  {
-    image:
-      avatar4,
-    message: 'New Payment received',
-    desc: 'Check your earnings',
-    time: '4:39 AM',
-  },
-  {
-    image:
-      avatar,
-    message: 'Jolly completed tasks',
-    desc: 'Assign her new tasks',
-    time: '1:12 AM',
-  },
+// export const chatData = [
+//   {
+//     image:
+//       avatar2,
+//     message: 'Roman Joined the Team!',
+//     desc: 'Congratulate him',
+//     time: '9:08 AM',
+//   },
+//   {
+//     image:
+//       avatar3,
+//     message: 'New message received',
+//     desc: 'Salma sent you new message',
+//     time: '11:56 AM',
+//   },
+//   {
+//     image:
+//       avatar4,
+//     message: 'New Payment received',
+//     desc: 'Check your earnings',
+//     time: '4:39 AM',
+//   },
+//   {
+//     image:
+//       avatar,
+//     message: 'Jolly completed tasks',
+//     desc: 'Assign her new tasks',
+//     time: '1:12 AM',
+//   },
 ];
 
 export const earningData = [
@@ -619,24 +632,24 @@ export const earningData = [
     amount: '39,354',
     percentage: '-4%',
     title: 'Customers',
-    iconColor: '#03C9D7',
+    iconColor: '#ff82bf',
     iconBg: '#E5FAFB',
     pcColor: 'red-600',
   },
   {
-    icon: <BsBoxSeam />,
+    icon: <MdSpeaker />,
     amount: '4,396',
     percentage: '+23%',
-    title: 'Products',
+    title: `Dj's`,
     iconColor: 'rgb(255, 244, 229)',
     iconBg: 'rgb(254, 201, 15)',
     pcColor: 'green-600',
   },
   {
-    icon: <FiBarChart />,
+    icon: <MdAddHomeWork />,
     amount: '423,39',
     percentage: '+38%',
-    title: 'Sales',
+    title: 'Clubs',
     iconColor: 'rgb(228, 106, 118)',
     iconBg: 'rgb(255, 244, 229)',
 
@@ -659,7 +672,7 @@ export const recentTransactions = [
     amount: '+$350',
     title: 'Paypal Transfer',
     desc: 'Money Added',
-    iconColor: '#03C9D7',
+    iconColor: '#ff82bf',
     iconBg: '#E5FAFB',
     pcColor: 'green-600',
   },
@@ -698,7 +711,7 @@ export const recentTransactions = [
     percentage: '+38%',
     title: 'Refund',
     desc: 'Payment Sent',
-    iconColor: '#03C9D7',
+    iconColor: '#ff82bf',
     iconBg: '#E5FAFB',
     pcColor: 'red-600',
   },
@@ -739,7 +752,7 @@ export const productsPerformance = [
     desc: 'Ice-Cream, Milk, Powder',
     rating: 'Good',
     itemSold: '65%',
-    earningAmount: '$546,000',
+    earningAmount: '₹546,000',
   },
   {
     image:
@@ -748,7 +761,7 @@ export const productsPerformance = [
     desc: 'Market, Mall',
     rating: 'Excellent',
     itemSold: '98%',
-    earningAmount: '$780,000',
+    earningAmount: '₹780,000',
   },
   {
     image:
@@ -757,7 +770,7 @@ export const productsPerformance = [
     desc: 'Chocolate, Yummy',
     rating: 'Average',
     itemSold: '46%',
-    earningAmount: '$457,000',
+    earningAmount: '₹457,000',
   },
   {
     image:
@@ -766,7 +779,7 @@ export const productsPerformance = [
     desc: 'Electric, Wire, Current',
     rating: 'Poor',
     itemSold: '23%',
-    earningAmount: '$123,000',
+    earningAmount: '₹123,000',
   },
 ];
 
@@ -778,11 +791,11 @@ export const medicalproBranding = {
     },
     {
       title: 'Budget',
-      desc: '$98,500',
+      desc: '₹98,500',
     },
     {
       title: 'Expense',
-      desc: '$63,000',
+      desc: '₹63,000',
     },
   ],
   teams: [
@@ -826,7 +839,7 @@ export const themeColors = [
   },
   {
     name: 'green-theme',
-    color: '#03C9D7',
+    color: '#ff82bf',
   },
   {
     name: 'purple-theme',
@@ -851,7 +864,7 @@ export const userProfileData = [
     icon: <BsCurrencyDollar />,
     title: 'My Profile',
     desc: 'Account Settings',
-    iconColor: '#03C9D7',
+    iconColor: '#ff82bf',
     iconBg: '#E5FAFB',
   },
   {
@@ -930,7 +943,7 @@ export const customersData = [
     Status: 'Active',
     StatusBg: '#8BE78B',
     Weeks: '40',
-    Budget: '$2.4k',
+    Budget: '₹2.4k',
     Location: 'India',
   },
   {
@@ -945,7 +958,7 @@ export const customersData = [
 
     StatusBg: '#8BE78B',
     Weeks: '11',
-    Budget: '$3.9k',
+    Budget: '₹3.9k',
     Location: 'India',
   },
   {
@@ -959,7 +972,7 @@ export const customersData = [
       avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
-    Budget: '$24.5k',
+    Budget: '₹24.5k',
     Location: 'USA',
   },
   {
@@ -973,7 +986,7 @@ export const customersData = [
       avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
-    Budget: '$16.5k',
+    Budget: '₹16.5k',
     Location: 'USA',
   },
   {
@@ -987,7 +1000,7 @@ export const customersData = [
       avatar2,
     StatusBg: 'red',
     Weeks: '34',
-    Budget: '$16.5k',
+    Budget: '₹16.5k',
     Location: 'USA',
   },
   {
@@ -1000,7 +1013,7 @@ export const customersData = [
     Status: 'Active',
     StatusBg: '#8BE78B',
     Weeks: '40',
-    Budget: '$2.4k',
+    Budget: '₹2.4k',
     Location: 'India',
   },
   {
@@ -1015,7 +1028,7 @@ export const customersData = [
 
     StatusBg: '#8BE78B',
     Weeks: '11',
-    Budget: '$3.9k',
+    Budget: '₹3.9k',
     Location: 'India',
   },
   {
@@ -1029,7 +1042,7 @@ export const customersData = [
       avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
-    Budget: '$24.5k',
+    Budget: '₹24.5k',
     Location: 'USA',
   },
   {
@@ -1043,7 +1056,7 @@ export const customersData = [
       avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
-    Budget: '$16.5k',
+    Budget: '₹16.5k',
     Location: 'USA',
   },
   {
@@ -1057,7 +1070,7 @@ export const customersData = [
       avatar2,
     StatusBg: 'red',
     Weeks: '34',
-    Budget: '$16.5k',
+    Budget: '₹16.5k',
     Location: 'USA',
   },
   {
@@ -1070,7 +1083,7 @@ export const customersData = [
     Status: 'Active',
     StatusBg: '#8BE78B',
     Weeks: '40',
-    Budget: '$2.4k',
+    Budget: '₹2.4k',
     Location: 'India',
   },
   {
@@ -1085,7 +1098,7 @@ export const customersData = [
 
     StatusBg: '#8BE78B',
     Weeks: '11',
-    Budget: '$3.9k',
+    Budget: '₹3.9k',
     Location: 'India',
   },
   {
@@ -1099,7 +1112,7 @@ export const customersData = [
       avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
-    Budget: '$24.5k',
+    Budget: '₹24.5k',
     Location: 'USA',
   },
   {
@@ -1113,7 +1126,7 @@ export const customersData = [
       avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
-    Budget: '$16.5k',
+    Budget: '₹16.5k',
     Location: 'USA',
   },
   {
@@ -1127,7 +1140,7 @@ export const customersData = [
       avatar2,
     StatusBg: 'red',
     Weeks: '34',
-    Budget: '$16.5k',
+    Budget: '₹16.5k',
     Location: 'USA',
   },
   {
@@ -1140,7 +1153,7 @@ export const customersData = [
     Status: 'Active',
     StatusBg: '#8BE78B',
     Weeks: '40',
-    Budget: '$2.4k',
+    Budget: '₹2.4k',
     Location: 'India',
   },
   {
@@ -1155,7 +1168,7 @@ export const customersData = [
 
     StatusBg: '#8BE78B',
     Weeks: '11',
-    Budget: '$3.9k',
+    Budget: '₹3.9k',
     Location: 'India',
   },
   {
@@ -1169,7 +1182,7 @@ export const customersData = [
       avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
-    Budget: '$24.5k',
+    Budget: '₹24.5k',
     Location: 'USA',
   },
   {
@@ -1183,7 +1196,7 @@ export const customersData = [
       avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
-    Budget: '$16.5k',
+    Budget: '₹16.5k',
     Location: 'USA',
   },
   {
@@ -1197,7 +1210,7 @@ export const customersData = [
       avatar2,
     StatusBg: 'red',
     Weeks: '34',
-    Budget: '$16.5k',
+    Budget: '₹16.5k',
     Location: 'USA',
   },
   {
@@ -1210,7 +1223,7 @@ export const customersData = [
     Status: 'Active',
     StatusBg: '#8BE78B',
     Weeks: '40',
-    Budget: '$2.4k',
+    Budget: '₹2.4k',
     Location: 'India',
   },
   {
@@ -1225,7 +1238,7 @@ export const customersData = [
 
     StatusBg: '#8BE78B',
     Weeks: '11',
-    Budget: '$3.9k',
+    Budget: '₹3.9k',
     Location: 'India',
   },
   {
@@ -1239,7 +1252,7 @@ export const customersData = [
       avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
-    Budget: '$24.5k',
+    Budget: '₹24.5k',
     Location: 'USA',
   },
   {
@@ -1253,7 +1266,7 @@ export const customersData = [
       avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
-    Budget: '$16.5k',
+    Budget: '₹16.5k',
     Location: 'USA',
   },
   {
@@ -1267,7 +1280,7 @@ export const customersData = [
       avatar2,
     StatusBg: 'red',
     Weeks: '34',
-    Budget: '$16.5k',
+    Budget: '₹16.5k',
     Location: 'USA',
   },
   {
@@ -1280,7 +1293,7 @@ export const customersData = [
     Status: 'Active',
     StatusBg: '#8BE78B',
     Weeks: '40',
-    Budget: '$2.4k',
+    Budget: '₹2.4k',
     Location: 'India',
   },
   {
@@ -1295,7 +1308,7 @@ export const customersData = [
 
     StatusBg: '#8BE78B',
     Weeks: '11',
-    Budget: '$3.9k',
+    Budget: '₹3.9k',
     Location: 'India',
   },
   {
@@ -1309,7 +1322,7 @@ export const customersData = [
       avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
-    Budget: '$24.5k',
+    Budget: '₹24.5k',
     Location: 'USA',
   },
   {
@@ -1323,7 +1336,7 @@ export const customersData = [
       avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
-    Budget: '$16.5k',
+    Budget: '₹16.5k',
     Location: 'USA',
   },
   {
@@ -1337,7 +1350,7 @@ export const customersData = [
       avatar2,
     StatusBg: 'red',
     Weeks: '34',
-    Budget: '$16.5k',
+    Budget: '₹16.5k',
     Location: 'USA',
   },
   {
@@ -1350,7 +1363,7 @@ export const customersData = [
     Status: 'Active',
     StatusBg: '#8BE78B',
     Weeks: '40',
-    Budget: '$2.4k',
+    Budget: '₹2.4k',
     Location: 'India',
   },
   {
@@ -1365,7 +1378,7 @@ export const customersData = [
 
     StatusBg: '#8BE78B',
     Weeks: '11',
-    Budget: '$3.9k',
+    Budget: '₹3.9k',
     Location: 'India',
   },
   {
@@ -1379,7 +1392,7 @@ export const customersData = [
       avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
-    Budget: '$24.5k',
+    Budget: '₹24.5k',
     Location: 'USA',
   },
   {
@@ -1393,7 +1406,7 @@ export const customersData = [
       avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
-    Budget: '$16.5k',
+    Budget: '₹16.5k',
     Location: 'USA',
   },
   {
@@ -1407,7 +1420,7 @@ export const customersData = [
       avatar2,
     StatusBg: 'red',
     Weeks: '34',
-    Budget: '$16.5k',
+    Budget: '₹16.5k',
     Location: 'USA',
   },
   {
@@ -1420,7 +1433,7 @@ export const customersData = [
     Status: 'Active',
     StatusBg: '#8BE78B',
     Weeks: '40',
-    Budget: '$2.4k',
+    Budget: '₹2.4k',
     Location: 'India',
   },
   {
@@ -1435,7 +1448,7 @@ export const customersData = [
 
     StatusBg: '#8BE78B',
     Weeks: '11',
-    Budget: '$3.9k',
+    Budget: '₹3.9k',
     Location: 'India',
   },
   {
@@ -1449,7 +1462,7 @@ export const customersData = [
       avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
-    Budget: '$24.5k',
+    Budget: '₹24.5k',
     Location: 'USA',
   },
   {
@@ -1462,7 +1475,7 @@ export const customersData = [
       avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
-    Budget: '$16.5k',
+    Budget: '₹16.5k',
     Location: 'USA',
   },
   {
@@ -1475,7 +1488,7 @@ export const customersData = [
       avatar2,
     StatusBg: 'red',
     Weeks: '34',
-    Budget: '$16.5k',
+    Budget: '₹16.5k',
     Location: 'USA',
   },
 
@@ -2123,13 +2136,13 @@ export const employeesData = [
 
 export const ordersData = [
   {
-    OrderID: 10248,
-    CustomerName: 'Vinet',
+    clubId: 10248,
+    ownerName: 'Vinet',
 
-    TotalAmount: 32.38,
+    clubName: 32.38,
     OrderItems: 'Fresh Tomato',
-    Location: 'USA',
-    Status: 'pending',
+    Location: 'IN',
+    Status: 'live',
     StatusBg: '#FB9678',
     ProductImage:
       product6,
@@ -2152,7 +2165,7 @@ export const ordersData = [
     OrderItems: 'Candy Gucci',
     Location: 'New York',
     Status: 'active',
-    StatusBg: '#03C9D7',
+    StatusBg: '#ff82bf',
     ProductImage:
       product7,
   },
@@ -2196,7 +2209,7 @@ export const ordersData = [
     OrderItems: 'Skincare',
     Location: 'USA',
     Status: 'active',
-    StatusBg: '#03C9D7',
+    StatusBg: '#ff82bf',
     ProductImage:
       product3,
   },
@@ -2240,7 +2253,7 @@ export const ordersData = [
     OrderItems: 'Ice Cream',
     Location: 'USA',
     Status: 'active',
-    StatusBg: '#03C9D7',
+    StatusBg: '#ff82bf',
     ProductImage:
       'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dairy-free-ice-cream-eae372d.jpg',
   },
@@ -2296,7 +2309,7 @@ export const ordersData = [
     OrderItems: 'Candy Gucci',
     Location: 'New York',
     Status: 'active',
-    StatusBg: '#03C9D7',
+    StatusBg: '#ff82bf',
     ProductImage:
       product7,
   },
@@ -2340,7 +2353,7 @@ export const ordersData = [
     OrderItems: 'Skincare',
     Location: 'USA',
     Status: 'active',
-    StatusBg: '#03C9D7',
+    StatusBg: '#ff82bf',
     ProductImage:
       product3,
   },
@@ -2384,7 +2397,7 @@ export const ordersData = [
     OrderItems: 'Ice Cream',
     Location: 'USA',
     Status: 'active',
-    StatusBg: '#03C9D7',
+    StatusBg: '#ff82bf',
     ProductImage:
       'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dairy-free-ice-cream-eae372d.jpg',
   },
@@ -2440,7 +2453,7 @@ export const ordersData = [
     OrderItems: 'Candy Gucci',
     Location: 'New York',
     Status: 'active',
-    StatusBg: '#03C9D7',
+    StatusBg: '#ff82bf',
     ProductImage:
       product7,
   },
@@ -2484,7 +2497,7 @@ export const ordersData = [
     OrderItems: 'Skincare',
     Location: 'USA',
     Status: 'active',
-    StatusBg: '#03C9D7',
+    StatusBg: '#ff82bf',
     ProductImage:
       product3,
   },
@@ -2528,7 +2541,7 @@ export const ordersData = [
     OrderItems: 'Ice Cream',
     Location: 'USA',
     Status: 'active',
-    StatusBg: '#03C9D7',
+    StatusBg: '#ff82bf',
     ProductImage:
       'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dairy-free-ice-cream-eae372d.jpg',
   },
@@ -2584,7 +2597,7 @@ export const ordersData = [
     OrderItems: 'Candy Gucci',
     Location: 'New York',
     Status: 'active',
-    StatusBg: '#03C9D7',
+    StatusBg: '#ff82bf',
     ProductImage:
       product7,
   },
@@ -2628,7 +2641,7 @@ export const ordersData = [
     OrderItems: 'Skincare',
     Location: 'USA',
     Status: 'active',
-    StatusBg: '#03C9D7',
+    StatusBg: '#ff82bf',
     ProductImage:
       product3,
   },
@@ -2672,7 +2685,7 @@ export const ordersData = [
     OrderItems: 'Ice Cream',
     Location: 'USA',
     Status: 'active',
-    StatusBg: '#03C9D7',
+    StatusBg: '#ff82bf',
     ProductImage:
       'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dairy-free-ice-cream-eae372d.jpg',
   },
@@ -2728,7 +2741,7 @@ export const ordersData = [
     OrderItems: 'Candy Gucci',
     Location: 'New York',
     Status: 'active',
-    StatusBg: '#03C9D7',
+    StatusBg: '#ff82bf',
     ProductImage:
       product7,
   },
@@ -2772,7 +2785,7 @@ export const ordersData = [
     OrderItems: 'Skincare',
     Location: 'USA',
     Status: 'active',
-    StatusBg: '#03C9D7',
+    StatusBg: '#ff82bf',
     ProductImage:
       product3,
   },
@@ -2816,7 +2829,7 @@ export const ordersData = [
     OrderItems: 'Ice Cream',
     Location: 'USA',
     Status: 'active',
-    StatusBg: '#03C9D7',
+    StatusBg: '#ff82bf',
     ProductImage:
       'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dairy-free-ice-cream-eae372d.jpg',
   },

@@ -1,0 +1,62 @@
+/* DJ.css */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.dj-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.dj-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15px;
+  width: 300px;
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dj-card:hover {
+  transform: scale(1.05);
+}
+
+.card-header {
+  background-color: #f96da5;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.status-icon.online {
+  background-color: #0ee24a;
+}
+
+.status-icon.offline {
+  background-color: #ff250c;
+}
+
+.additional-info {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #555;
+}
+
+/* Add more styling as needed */

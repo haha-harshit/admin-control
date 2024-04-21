@@ -3,6 +3,7 @@ import {Link,NavLink} from 'react-router-dom';
 import {SiShopware} from 'react-icons/si';
 import {MdOutlineCancel} from 'react-icons/md';
 import {TooltipComponent} from '@syncfusion/ej2-react-popups';
+import { HiMiniUserGroup } from "react-icons/hi2";
 
 import {links} from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
@@ -27,7 +28,7 @@ const SideBar = () => {
           <Link to="/" onClick={handleCloseSideBar} 
           className='items-center flex gap-3 ml-3 mt-4 text-xl font-extrabold tracking-tight
           dark:text-white text-slate-900'>
-            <SiShopware/> <span>Shoppy</span>
+          <span>CLUB <span style={{color:"#ff82bf"}}>NIGHTS</span></span>
           </Link>
           <TooltipComponent content="Menu" position='BottomCenter'>
               <button type='button' onClick={()=>setActiveMenu((prevActiveMenu)=> !prevActiveMenu)} className='text-xl rounded-full p-3

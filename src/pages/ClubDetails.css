@@ -1,0 +1,114 @@
+/* ClubDetails.css */
+
+.club-details-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .card {
+    flex-basis: calc(33.33% - 20px);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+    position: relative;
+  }
+  
+  .atm-card {
+    background-color: #3498db;
+    color: #fff;
+
+  }
+  
+  .basic-card {
+    background-color: #2ecc71;
+    color: #fff;
+
+  }
+  
+  .date-corner {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e32866;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .card-headers1 {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(10deg,#2ecc71,#f3f3f3);
+  }
+  .card-headers2 {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(10deg,#3498db,#f3f3f3);
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content p {
+    margin: 0 0 10px;
+  }
+  
+  .verification-button {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .verification-button button {
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .verify-btn {
+    background-color: #4caf50;
+  }
+  
+  .unverify-btn {
+    background-color: #e74c3c;
+  }
+  /* Add this style for the loader */
+.loading-btn {
+    position: relative;
+  }
+  
+  .loading-btn:disabled::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    border: 2px solid #ccc;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  

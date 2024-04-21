@@ -6,7 +6,7 @@ import {RiNotification3Line} from 'react-icons/ri';
 import {MdKeyboardArrowDown} from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
-import avatar from '../data/avatar.jpg';
+import avatar from '../data/jatin.png';
 import {Cart, Chat, Notification, UserProfile} from '.';
 import { useStateContext } from '../contexts/ContextProvider';
 
@@ -42,16 +42,14 @@ const Navbar = () => {
     <div className='flex justify-between p-2 md:mx-6 relative'>
       <NavButton title="Menu" customFunc={()=> setActiveMenu((prevActiveMenu)=> !prevActiveMenu)} color={currentColor} icon={<AiOutlineMenu/>}/>
       <div className='flex'>
-      <NavButton title="Cart" customFunc={()=> handleClick('cart')} color={currentColor} icon={<FiShoppingCart/>}/>
-      <NavButton title="Chat" dotColor="#03C9D7" customFunc={()=> handleClick('chat')} color={currentColor} icon={<BsChatLeft/>}/>
-      <NavButton title="Notification" dotColor="#03C9D7" customFunc={()=> handleClick('notification')} color={currentColor} icon={<RiNotification3Line/>}/>
+     
       <TooltipComponent content="Profile" position='BottomCenter'>
         <div className='flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg'
         onClick={()=> handleClick('userProfile')}>
           <img src={avatar} className='rounded-full w-8 h-8'/>
           <p>
             <span className='text-gray-400 text-14'>Hi, </span>{' '}
-            <span className='font-bold text-gray-400 ml-1 text-14'>Dulanjali</span>
+            <span className='font-bold text-gray-400 ml-1 text-14'>Jatin Chaudhary</span>
           </p>
           <MdKeyboardArrowDown className='text-gray-400 text-14'/>
         </div>
